@@ -19,9 +19,10 @@ export default function Home() {
                 enabling QR code access, writing backend logic, and designing a live leaderboard that ranks team progress.
                 I also implemented end-to-end tests to ensure reliability across components.
               </p>
+
               <iframe
                   className="w-full aspect-video rounded-md shadow"
-                  src="https://www.loom.com/share/23618d29bc4642f7b0c440e2baee7e8e?sid=2a8187f9-7c02-4587-93e5-79b41825ca9b"
+                  src="https://www.loom.com/share/23618d29bc4642f7b0c440e2baee7e8e?sid=64ebfb14-ff37-4050-8736-679fc51057b7"
                   frameBorder="0"
                   allowFullScreen
               ></iframe>
