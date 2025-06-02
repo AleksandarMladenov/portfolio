@@ -1,37 +1,33 @@
 import { CollapsibleCard } from '../components/ui/CollapsibleCard';
+import theme from '../theme';
 
 export default function Home() {
   return (
-      <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-200 py-10 px-6">
+      <main className={`min-h-screen bg-gradient-to-b ${theme.colors.backgroundLight} dark:${theme.colors.backgroundDark} py-10 px-6`}>
         <div className="max-w-3xl mx-auto">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-10 gap-4">
             <div>
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 tracking-tight mb-2">
+              <h1 className={`text-5xl md:text-6xl font-bold tracking-tight mb-2 ${theme.colors.headingLight} dark:${theme.colors.headingDark}`}>
                 Aleksander Mladenov
               </h1>
-              <p className="text-lg md:text-xl text-gray-600 max-w-xl">
+              <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-xl">
                 Software Engineering student focused on real-world projects, clean architecture, and impactful tech.
               </p>
               <div className="mt-4">
-                <a
-                    href="/skills"
-                    className="inline-block bg-blue-600 text-white px-5 py-2 rounded-md shadow hover:bg-blue-700 transition"
-                >
+                <a href="/skills" className={`inline-block ${theme.colors.accent} px-5 py-2 rounded-md shadow transition`}>
                   View My Skills →
                 </a>
               </div>
-
             </div>
 
             <div className="mt-4 md:mt-0">
-    <span className="inline-block bg-blue-100 text-blue-700 text-sm font-medium px-4 py-2 rounded-full shadow-sm">
-      Available for Internships – Beginning of September 2025
-    </span>
+            <span className={`inline-block ${theme.colors.badgeLight} dark:${theme.colors.badgeDark} text-sm font-medium px-4 py-2 rounded-full shadow-sm`}>
+              Available for Internships – Beginning of September 2025
+            </span>
             </div>
           </div>
 
-
-          {/* Venloop */}
+          {/* Project Cards */}
           <CollapsibleCard
               title="Venloop – Task & Leaderboard System"
               subtitle="Technologies: React, Next.js, Firebase, Node.js"
@@ -43,11 +39,6 @@ export default function Home() {
               enabling QR code access, writing backend logic, and designing a live leaderboard that ranks team progress.
               I also implemented end-to-end tests to ensure reliability across components.
             </p>
-            <p className="mb-3">
-              In the demo video, I open the task submission app via a QR code, which contains an access token. This token
-              identifies the team and redirects the user to the correct task. The page dynamically loads the template
-              and allows the user to complete it.
-            </p>
             <div className="relative w-full pb-[56.25%] h-0 mb-3">
               <iframe
                   className="absolute top-0 left-0 w-full h-full rounded"
@@ -58,16 +49,12 @@ export default function Home() {
             </div>
           </CollapsibleCard>
 
-          {/* BeerApp */}
           <CollapsibleCard
               title="BeerApp – Swift Map Tracker"
               subtitle="Technologies: Swift, PostgreSQL, REST APIs, Docker"
               date="September 2024 – January 2025"
           >
-            <p className="mb-3">
-              A native iOS app built in Swift where users can track friends’ locations and navigate to bars.
-              My role focused on implementing all map-related features:
-            </p>
+            <p className="mb-3">A native iOS app built in Swift where users can track friends’ locations and navigate to bars.</p>
             <ul className="list-disc list-inside mb-3 space-y-1">
               <li>Showing the user's real-time location on the map</li>
               <li>Converting latitude/longitude to readable addresses</li>
@@ -85,7 +72,6 @@ export default function Home() {
             </div>
           </CollapsibleCard>
 
-          {/* Routes */}
           <CollapsibleCard
               title="Routes – Laravel Routing App"
               subtitle="Technologies: PHP, Laravel, MySQL"
@@ -93,15 +79,9 @@ export default function Home() {
           >
             <p className="mb-3">
               A Laravel-based app that calculates the shortest route between two points with real-time fuel stop data.
-              I worked on implementing backend logic for routing, fuel usage, and travel time estimation. This was a collaborative project
-              completed with classmates in high school.
+              I worked on backend logic for routing, fuel usage, and travel time estimation.
             </p>
-            <a
-                href="https://github.com/LaravelProjectTeam/routes"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 underline"
-            >
+            <a href="https://github.com/LaravelProjectTeam/routes" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
               View GitHub Repository →
             </a>
           </CollapsibleCard>
