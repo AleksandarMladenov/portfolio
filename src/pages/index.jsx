@@ -23,8 +23,7 @@ export default function Home() {
               <div style="position: relative; padding-bottom: 54.76673427991886%; height: 0;">
                 <iframe
                     src="https://www.loom.com/embed/23618d29bc4642f7b0c440e2baee7e8e?sid=e9162a00-0b57-4a6a-8a00-071145c75d3d"
-                    frameBorder="0" webkitallowfullscreen mozallowfullscreen
-                    allowFullScreen
+                    frameBorder="0"
                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
               </div>
             </CardContent>
