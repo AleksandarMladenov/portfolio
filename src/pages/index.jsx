@@ -1,4 +1,4 @@
-import { CollapsibleCard } from '../components/CollapsibleCard';
+import { CollapsibleCard } from '../components/ui/CollapsibleCard';
 
 export default function Home() {
   return (
