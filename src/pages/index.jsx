@@ -4,10 +4,23 @@ export default function Home() {
   return (
       <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-200 py-10 px-6">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl font-bold mb-2 text-gray-900">Aleksander Mladenov</h1>
-          <p className="text-gray-600 mb-8">
-            Software Engineering student passionate about practical technology and building cool real-world apps.
-          </p>
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-10 gap-4">
+            <div>
+              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 tracking-tight mb-2">
+                Aleksander Mladenov
+              </h1>
+              <p className="text-lg md:text-xl text-gray-600 max-w-xl">
+                Software Engineering student focused on real-world projects, clean architecture, and impactful tech.
+              </p>
+            </div>
+
+            <div className="mt-4 md:mt-0">
+    <span className="inline-block bg-blue-100 text-blue-700 text-sm font-medium px-4 py-2 rounded-full shadow-sm">
+      Available for Internships – Beginning of September 2025
+    </span>
+            </div>
+          </div>
+
 
           {/* Venloop */}
           <CollapsibleCard
@@ -17,7 +30,7 @@ export default function Home() {
           >
             <p className="mb-3">
               During our 4th semester, we built a web-based task management app for the real event “Venloop Avond4Daagse.”
-              I was responsible for developing all task-related features (description, image, input, multiple choice),
+              I was responsible for developing all task-related functionalities,
               enabling QR code access, writing backend logic, and designing a live leaderboard that ranks team progress.
               I also implemented end-to-end tests to ensure reliability across components.
             </p>
