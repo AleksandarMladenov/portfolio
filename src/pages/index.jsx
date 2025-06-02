@@ -1,95 +1,88 @@
-import { Card } from '../components/ui/Card'
-import { CardContent } from '../components/ui/CardContent'
+import { CollapsibleCard } from '../components/CollapsibleCard';
 
 export default function Home() {
   return (
-      <main className="min-h-screen bg-gray-100 p-6">
+      <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-200 py-10 px-6">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl font-bold mb-6">Aleksander Mladenov</h1>
-          <p className="mb-8 text-gray-700">
+          <h1 className="text-4xl font-bold mb-2 text-gray-900">Aleksander Mladenov</h1>
+          <p className="text-gray-600 mb-8">
             Software Engineering student passionate about practical technology and building cool real-world apps.
           </p>
 
-          {/* --- VENLOOP PROJECT --- */}
-          <p className="text-sm text-gray-500 mb-1">🗓 March – June 2025</p>
-          <Card>
-            <CardContent>
-              <h2 className="text-xl font-semibold mb-2">Venloop – Task & Leaderboard System</h2>
-              <p className="text-gray-700 mb-3">
-                During our 4th semester, we built a web-based task management system for the real event “Venloop Avond4Daagse.”
-                I was responsible for all task-related features (description, image, input, multiple choice), enabling QR code access,
-                backend integration, and designing the live leaderboard. I also implemented end-to-end tests to ensure the reliability of submissions.
-              </p>
+          {/* Venloop */}
+          <CollapsibleCard
+              title="Venloop – Task & Leaderboard System"
+              subtitle="Technologies: React, Next.js, Firebase, Node.js"
+              date="March – June 2025"
+          >
+            <p className="mb-3">
+              During our 4th semester, we built a web-based task management app for the real event “Venloop Avond4Daagse.”
+              I was responsible for developing all task-related features (description, image, input, multiple choice),
+              enabling QR code access, writing backend logic, and designing a live leaderboard that ranks team progress.
+              I also implemented end-to-end tests to ensure reliability across components.
+            </p>
+            <p className="mb-3">
+              In the demo video, I open the task submission app via a QR code, which contains an access token. This token
+              identifies the team and redirects the user to the correct task. The page dynamically loads the template
+              and allows the user to complete it.
+            </p>
+            <div className="relative w-full pb-[56.25%] h-0 mb-3">
+              <iframe
+                  className="absolute top-0 left-0 w-full h-full rounded"
+                  src="https://www.loom.com/embed/23618d29bc4642f7b0c440e2baee7e8e"
+                  frameBorder="0"
+                  allowFullScreen
+              ></iframe>
+            </div>
+          </CollapsibleCard>
 
-              <div className="relative w-full pb-[56.25%] h-0 mb-4">
-                <iframe
-                    className="absolute top-0 left-0 w-full h-full rounded"
-                    src="https://www.loom.com/embed/23618d29bc4642f7b0c440e2baee7e8e"
-                    frameBorder="0"
-                    allowFullScreen
-                ></iframe>
-              </div>
+          {/* BeerApp */}
+          <CollapsibleCard
+              title="BeerApp – Swift Map Tracker"
+              subtitle="Technologies: Swift, PostgreSQL, REST APIs, Docker"
+              date="September 2024 – January 2025"
+          >
+            <p className="mb-3">
+              A native iOS app built in Swift where users can track friends’ locations and navigate to bars.
+              My role focused on implementing all map-related features:
+            </p>
+            <ul className="list-disc list-inside mb-3 space-y-1">
+              <li>Showing the user's real-time location on the map</li>
+              <li>Converting latitude/longitude to readable addresses</li>
+              <li>Displaying routes between users and bars</li>
+              <li>Integrating push notifications for live location updates</li>
+              <li>REST API integration for external data and Docker setup</li>
+            </ul>
+            <div className="relative w-full pb-[187.5%] h-0 mb-3">
+              <iframe
+                  className="absolute top-0 left-0 w-full h-full rounded"
+                  src="https://www.loom.com/embed/cc8968779dba4a998c32fdc789f99886"
+                  frameBorder="0"
+                  allowFullScreen
+              ></iframe>
+            </div>
+          </CollapsibleCard>
 
-              <p className="text-sm text-gray-600"><strong>Technologies:</strong> React, Next.js, Firebase, Node.js</p>
-            </CardContent>
-          </Card>
-
-          {/* --- BEERAPP PROJECT --- */}
-          <p className="text-sm text-gray-500 mt-6">🗓 September 2024 – January 2025</p>
-          <Card>
-            <CardContent>
-              <h2 className="text-xl font-semibold mb-2">BeerApp – Swift Map Tracker</h2>
-              <p className="text-gray-700 mb-3">
-                A native iOS app created during our 3rd semester to help friends locate each other and meet up at bars.
-                I was responsible for all the **map-related features** within the app:
-              </p>
-              <ul className="list-disc list-inside text-gray-700 mb-3 space-y-1">
-                <li>Showing the user's **real-time location** on the map</li>
-                <li>Converting **latitude/longitude to readable addresses**</li>
-                <li>Displaying the **route between users and bars**</li>
-                <li>Implementing **push notifications** for live friend activity</li>
-                <li>Integrating data from external **REST APIs**</li>
-              </ul>
-              <p className="text-gray-700 mb-4">
-                This was all developed using **Swift**, and supported by a **PostgreSQL backend**, **Docker**, and Node.js services.
-              </p>
-
-              <div className="relative w-full pb-[187.5%] h-0 mb-4">
-                <iframe
-                    className="absolute top-0 left-0 w-full h-full rounded"
-                    src="https://www.loom.com/embed/cc8968779dba4a998c32fdc789f99886"
-                    frameBorder="0"
-                    allowFullScreen
-                ></iframe>
-              </div>
-
-              <p className="text-sm text-gray-600">
-                <strong>Technologies:</strong> Swift, PostgreSQL, REST APIs, Node.js, Docker
-              </p>
-            </CardContent>
-          </Card>
-
-
-          {/* --- ROUTES PROJECT --- */}
-          <p className="text-sm text-gray-500 mt-6">🗓 March – July 2021</p>
-          <Card>
-            <CardContent>
-              <h2 className="text-xl font-semibold mb-2">Routes – Laravel Routing App</h2>
-              <p className="text-gray-700 mb-3">
-                A Laravel-based web app that calculates the shortest path between two endpoints and shows fuel stations along the route.
-                I collaborated on logic for travel time estimation and fuel data integration.
-              </p>
-              <p className="text-sm text-gray-600"><strong>Technologies:</strong> PHP, Laravel, MySQL</p>
-              <a
-                  className="text-blue-600 underline text-sm"
-                  href="https://github.com/LaravelProjectTeam/routes"
-                  target="_blank"
-                  rel="noopener noreferrer"
-              >
-                View GitHub Repository →
-              </a>
-            </CardContent>
-          </Card>
+          {/* Routes */}
+          <CollapsibleCard
+              title="Routes – Laravel Routing App"
+              subtitle="Technologies: PHP, Laravel, MySQL"
+              date="March – July 2021"
+          >
+            <p className="mb-3">
+              A Laravel-based app that calculates the shortest route between two points with real-time fuel stop data.
+              I worked on implementing backend logic for routing, fuel usage, and travel time estimation. This was a collaborative project
+              completed with classmates in high school.
+            </p>
+            <a
+                href="https://github.com/LaravelProjectTeam/routes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 underline"
+            >
+              View GitHub Repository →
+            </a>
+          </CollapsibleCard>
         </div>
       </main>
   );
