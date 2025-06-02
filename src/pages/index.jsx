@@ -40,9 +40,18 @@ export default function Home() {
             <CardContent>
               <h2 className="text-xl font-semibold mb-2">BeerApp – Swift Map Tracker</h2>
               <p className="text-gray-700 mb-3">
-                A native iOS app built in Swift where users can track friends’ locations and navigate to bars.
-                My role focused on implementing all map functionality: showing real-time user location, translating coordinates to addresses,
-                and generating routes to friends or destinations. The app used push notifications and REST API integration for real-time updates.
+                A native iOS app created during our 3rd semester to help friends locate each other and meet up at bars.
+                I was responsible for all the **map-related features** within the app:
+              </p>
+              <ul className="list-disc list-inside text-gray-700 mb-3 space-y-1">
+                <li>Showing the user's **real-time location** on the map</li>
+                <li>Converting **latitude/longitude to readable addresses**</li>
+                <li>Displaying the **route between users and bars**</li>
+                <li>Implementing **push notifications** for live friend activity</li>
+                <li>Integrating data from external **REST APIs**</li>
+              </ul>
+              <p className="text-gray-700 mb-4">
+                This was all developed using **Swift**, and supported by a **PostgreSQL backend**, **Docker**, and Node.js services.
               </p>
 
               <div className="relative w-full pb-[187.5%] h-0 mb-4">
@@ -54,9 +63,12 @@ export default function Home() {
                 ></iframe>
               </div>
 
-              <p className="text-sm text-gray-600"><strong>Technologies:</strong> Swift, PostgreSQL, REST APIs, Node.js, Docker</p>
+              <p className="text-sm text-gray-600">
+                <strong>Technologies:</strong> Swift, PostgreSQL, REST APIs, Node.js, Docker
+              </p>
             </CardContent>
           </Card>
+
 
           {/* --- ROUTES PROJECT --- */}
           <p className="text-sm text-gray-500 mt-6">🗓 March – July 2021</p>
