@@ -12,6 +12,15 @@ export default function Home() {
               <p className="text-lg md:text-xl text-gray-600 max-w-xl">
                 Software Engineering student focused on real-world projects, clean architecture, and impactful tech.
               </p>
+              <div className="mt-4">
+                <a
+                    href="/skills"
+                    className="inline-block bg-blue-600 text-white px-5 py-2 rounded-md shadow hover:bg-blue-700 transition"
+                >
+                  View My Skills →
+                </a>
+              </div>
+
             </div>
 
             <div className="mt-4 md:mt-0">
