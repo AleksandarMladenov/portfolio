@@ -10,45 +10,72 @@ export default function Home() {
             Software Engineering student passionate about practical technology and building cool real-world apps.
           </p>
 
+          {/* --- VENLOOP PROJECT --- */}
+          <p className="text-sm text-gray-500 mb-1">🗓 March – June 2025</p>
           <Card>
             <CardContent>
               <h2 className="text-xl font-semibold mb-2">Venloop – Task & Leaderboard System</h2>
               <p className="text-gray-700 mb-3">
-                During our 4th semester, we built a web-based task management app for the real event “Venloop Avond4Daagse.”
-                I was responsible for developing all task-related features (description, image, input, multiple choice),
-                enabling QR code access, writing backend logic, and designing a live leaderboard that ranks team progress.
-                I also implemented end-to-end tests to ensure reliability across components.
+                During our 4th semester, we built a web-based task management system for the real event “Venloop Avond4Daagse.”
+                I was responsible for all task-related features (description, image, input, multiple choice), enabling QR code access,
+                backend integration, and designing the live leaderboard. I also implemented end-to-end tests to ensure the reliability of submissions.
               </p>
 
-              <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+              <div className="relative w-full pb-[56.25%] h-0 mb-4">
                 <iframe
+                    className="absolute top-0 left-0 w-full h-full rounded"
                     src="https://www.loom.com/embed/23618d29bc4642f7b0c440e2baee7e8e"
                     frameBorder="0"
                     allowFullScreen
-                    style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
                 ></iframe>
               </div>
 
+              <p className="text-sm text-gray-600"><strong>Technologies:</strong> React, Next.js, Firebase, Node.js</p>
             </CardContent>
           </Card>
 
-
-          <Card className="mt-4">
+          {/* --- BEERAPP PROJECT --- */}
+          <p className="text-sm text-gray-500 mt-6">🗓 September 2024 – January 2025</p>
+          <Card>
             <CardContent>
               <h2 className="text-xl font-semibold mb-2">BeerApp – Swift Map Tracker</h2>
-              <p className="text-gray-700">
-                Built map tracking (current location, route to bar), push notifications, and REST API integration.
+              <p className="text-gray-700 mb-3">
+                A native iOS app built in Swift where users can track friends’ locations and navigate to bars.
+                My role focused on implementing all map functionality: showing real-time user location, translating coordinates to addresses,
+                and generating routes to friends or destinations. The app used push notifications and REST API integration for real-time updates.
               </p>
+
+              <div className="relative w-full pb-[187.5%] h-0 mb-4">
+                <iframe
+                    className="absolute top-0 left-0 w-full h-full rounded"
+                    src="https://www.loom.com/embed/cc8968779dba4a998c32fdc789f99886"
+                    frameBorder="0"
+                    allowFullScreen
+                ></iframe>
+              </div>
+
+              <p className="text-sm text-gray-600"><strong>Technologies:</strong> Swift, PostgreSQL, REST APIs, Node.js, Docker</p>
             </CardContent>
           </Card>
 
-          <Card className="mt-4">
+          {/* --- ROUTES PROJECT --- */}
+          <p className="text-sm text-gray-500 mt-6">🗓 March – July 2021</p>
+          <Card>
             <CardContent>
               <h2 className="text-xl font-semibold mb-2">Routes – Laravel Routing App</h2>
-              <p className="text-gray-700">
-                Shortest route logic, fuel stops, and Laravel backend work with friends.
-                <a className="text-blue-600 underline ml-1" href="https://github.com/LaravelProjectTeam/routes" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <p className="text-gray-700 mb-3">
+                A Laravel-based web app that calculates the shortest path between two endpoints and shows fuel stations along the route.
+                I collaborated on logic for travel time estimation and fuel data integration.
               </p>
+              <p className="text-sm text-gray-600"><strong>Technologies:</strong> PHP, Laravel, MySQL</p>
+              <a
+                  className="text-blue-600 underline text-sm"
+                  href="https://github.com/LaravelProjectTeam/routes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+              >
+                View GitHub Repository →
+              </a>
             </CardContent>
           </Card>
         </div>
