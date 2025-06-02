@@ -13,11 +13,21 @@ export default function Home() {
           <Card>
             <CardContent>
               <h2 className="text-xl font-semibold mb-2">Venloop – Task & Leaderboard System</h2>
-              <p className="text-gray-700">
-                Developed task features (QR, input, choice), backend services, leaderboard logic and E2E tests.
+              <p className="text-gray-700 mb-3">
+                During our 4th semester, we built a web-based task management app for the real event “Venloop Avond4Daagse.”
+                I was responsible for developing all task-related features (description, image, input, multiple choice),
+                enabling QR code access, writing backend logic, and designing a live leaderboard that ranks team progress.
+                I also implemented end-to-end tests to ensure reliability across components.
               </p>
+              <iframe
+                  className="w-full aspect-video rounded-md shadow"
+                  src="https://www.loom.com/share/23618d29bc4642f7b0c440e2baee7e8e?sid=2a8187f9-7c02-4587-93e5-79b41825ca9b"
+                  frameBorder="0"
+                  allowFullScreen
+              ></iframe>
             </CardContent>
           </Card>
+
 
           <Card className="mt-4">
             <CardContent>
