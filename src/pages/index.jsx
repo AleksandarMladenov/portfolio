@@ -54,7 +54,7 @@ export default function Home() {
               subtitle="Technologies: Swift, PostgreSQL, REST APIs, Docker"
               date="September 2024 – January 2025"
           >
-            <p className="mb-3">A native iOS app built in Swift where users can track friends’ locations and navigate to bars.</p>
+            <p className="mb-3">A native iOS app built in Swift where users can track friends’ locations and navigate to bars. I was given the responsibilities mapped below:</p>
             <ul className="list-disc list-inside mb-3 space-y-1">
               <li>Showing the user's real-time location on the map</li>
               <li>Converting latitude/longitude to readable addresses</li>
