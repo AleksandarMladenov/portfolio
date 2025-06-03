@@ -9,7 +9,7 @@ export default function SkillsPage() {
                         My Skillset
                     </h1>
                     <p className={`${theme.typography.paragraph} ${theme.colors.textLight} dark:${theme.colors.textDark} max-w-2xl mx-auto`}>
-                        A blend of engineering, front-end creativity, and team-focused soft skills developed through real-world projects.
+                        A blend of engineering, front-end creativity, and team-focused soft skills developed through real-world projects as well as conducted trough my university studies.
                     </p>
                 </div>
 
@@ -18,9 +18,9 @@ export default function SkillsPage() {
                         <h2 className={`${theme.typography.subheading} mb-4 text-blue-800 dark:text-blue-200`}>Professional Skills</h2>
                         <div className="flex flex-wrap gap-3">
                             {[
-                                'React', 'Next.js', 'JavaScript', 'Tailwind CSS', 'CSS Modules',
+                                'React', 'Next.js', 'JavaScript', 'Tailwind CSS','Java',
                                 'Firebase', 'Node.js', 'REST APIs', 'PostgreSQL',
-                                'Docker', 'Laravel', 'Swift', 'Git', 'Vercel'
+                                'Docker', 'Laravel', 'Swift', 'Git', 'Vercel', 'Firebase'
                             ].map((skill) => (
                                 <span key={skill} className={`${theme.colors.tagLight} dark:${theme.colors.tagDark} px-3 py-1 rounded-full text-sm font-medium`}>
                   {skill}
@@ -36,7 +36,6 @@ export default function SkillsPage() {
                             <li>Strong debugging and problem-solving in both frontend and backend logic</li>
                             <li>Initiative-taking and fast adaptation to new tools or technologies</li>
                             <li>Time management under real deadlines and project delivery schedules</li>
-                            <li>Test-driven thinking and end-to-end responsibility for project modules</li>
                         </ul>
                     </section>
                 </div>
